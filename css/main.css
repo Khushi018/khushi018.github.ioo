@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+  
+  }
+  /* custom scroll bar */
+  ::-webkit-scrollbar {
+      width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+      background: #5c5959;
+  }
+  ::selection{
+    background: rgba(198, 61, 247, 0.3);
+  }
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+.navbar{
+    margin-bottom: 80px;
+}
+
+.container{
+    /* max-width: 1200px; */
+    width: 90%;
+    margin: auto;
+    
+}
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    color: white;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.menu-items{
+    order: 2;
+    display: flex;
+}
+.logo{
+    order: 1;
+    font-size: 2.3rem;
+}
+
+.menu-items li{
+    list-style: none;
+    margin-left: 1.7rem;
+    font-size: 1.3rem;
+}
+
+.navbar a{
+    color: rgb(243, 235, 235) ;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    color: #DAAA4D;
+}
+.navbar{
+    background: #E3304E;
+  
+  }
+  .navbar a{
+    font-size: 20px ;
+    font-weight: bold ;
+          }
+  .navbar h1{
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+@media (max-width: 866px){
+   
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines{
+        display: block;
+    }
+
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .navbar-container .hamburger-lines{
+        display: block;
+        height: 28px;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-container .hamburger-lines .line{
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #333;
+    }
+    
+    .navbar-container .hamburger-lines .line1{
+        transform-origin: 0% 0%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line2{
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .navbar-container .hamburger-lines .line3{
+        transform-origin: 0% 100%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        width: 200px;
+        max-width: 300px;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        box-shadow:  5px 0px 10px 0px #aaa;
+        overflow: scroll;
+    }
+
+    .navbar .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500 !;
+    }
+    .navbar .menu-items li a{
+        color: #E3304E;
+    }
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 2.5rem;
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items{
+        transform: translateX(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{
+        transform: rotate(45deg);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{
+        transform: scaleY(0);
+    }
+
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
+        transform: rotate(-45deg);
+    }
+
+}
+@media (max-width: 900px){
+
+    #home{ 
+        height: 600px;
+    }
+}
+@media (max-width: 500px){
+    .navbar-container input[type="checkbox"]:checked ~ .logo{
+        display: none;
+    }
+}
+
+#home{
+    height: 780px;
+    /* margin-top: 50px; */
+    text-align: center;
+    padding-top: 130px;
+}
+
+#social_Links{
+    padding-top: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#social_Links>div{
+    width: 70px;
+    height: 70px;
+}
+
+#social_Links img{
+    width: 100%;
+}
+
+#social_Links>div:hover{
+    width: 90px;
+}
+
+#github img{
+    width:70% ;
+    margin-bottom: 30px;
+  }
+  .calendar{
+    width: 70%;
+  }
+
+  #github{
+    background-color: #E3304E;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+@media (max-width: 420px){
+#github img , .calendar {
+width: 90%;
+}
+
+#social_Links>div{
+    width: 50px;
+    height: 50px;
+}
+#home{
+    padding-top: 100px;
+}
+}
+
+ 
+@media (max-width: 340px){
+.calendar {
+width: 100%;
+}
+
+.but{
+    display: block;
+}
+.but>button {
+    margin-bottom: 20px;
+}
+}
+
+
+
+
+
+
+#tachstack , #skills{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    margin :auto ;
+    /* width: 700px ; */
+    gap:50px ;
+    
+    padding: auto;
+    margin-top: 100px;
+}
+#statics{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin :auto ;
+    width: 100% ;
+    gap:50px ;
+    padding: auto;
+    margin-bottom: 150px;
+    text-align: center;
+    
+    
+} 
+#stat{
+    background-color:#E3304E;
+}
+#statics>div{
+    padding-top: 40px;
+    border: 2px solid rgb(255, 254, 254);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    width : 180px ;
+    height: 150px;
+    text-align: center;
+}
+#tachstack>div , #skills>div{
+    width :250px ;
+   
+    height: 150px;
+   
+}
+
+#tachstack , #skills {
+    width : 90%
+}
+
+.section-title{
+    font-weight: bold;
+}
+
+#tachstack img , #skills img{
+    width: 80px ;
+    height: 80px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+#tachstack h3 , #skills h3 ,#statics h3{
+    font-size: 24px;
+    font-weight: bold !important;
+    color:  rgb(0, 0, 0);
+    text-align: center;
+}
+
+#statics h5{
+    font-size: 18px;
+    font-weight: bold !important;
+    color: #000000;
+}
+
+.row p{
+    text-align: justify;
+}
+
+#tachstack img:hover , #skills img:hover{
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+
+  }
+
+#contact p{
+text-align: center;
+border: 3px solid white;
+border-radius: 5px;
+border-color: #E3304E;
+
+color: white;
+width: 270px;
+height: 40px;
+margin: auto;
+font-size: 20px;
+margin-bottom: 30px;
+}
+#contact{
+    background-color: #DAAA4D;
+    padding-bottom: 200px;
+    text-align: center;
+}
+#contact>h5:first-of-type{
+    margin-top: 50px;
+   
+}
+
+#contact>h5{
+    color:#E3304E;
+}
+#contact p:hover{
+    background-color: rgb(247, 242, 242);
+    color:#E3304E;
+}
+
+#heading{
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+.aboutme {
+    /* background-color: #0fb6d7; */
+    background-color: #DAAA4D;
+    margin-top: -90px;
+    padding-top: 100px;
+    color: white;
+}
+
+.text-gray-900{
+    color: wheat;
+}
+
+
+#projects{
+    background-color: #DAAA4D;
+}
+
+
+section>.container{
+
+    background-color: #d4edec;
+    border-radius: 50px;
+    color: rgb(29, 28, 28);
+}
+
+.title-font{
+    color: rgb(9, 8, 8);
+}
+
+.object-cover{
+    border-radius: 30px;
+}
+
+#home>h1{
+    font-size: 50px;
+    color: #E3304E;
+}
+#home>h3{
+    color: #DAAA4D;
+}
+
+
+@media (max-width: 340px){
+    
+#home>h1{
+    font-size: 40px;
+}
+}
+
+
+.leading-relaxed{
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+ 
+@media (min-width: 765px) and (max-width: 900px){
+section .object-cover{
+ height: 400px;
+}
+} 
+
+strong{
+    color: #080808;
+}
+
+
+h1,h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.khus{
+    /* align-items: center; */
+    text-align: center;
+    margin-left:42%; 
+    margin-bottom: 3%;
+    /* /* border: 1px solid red; */
+    
+}

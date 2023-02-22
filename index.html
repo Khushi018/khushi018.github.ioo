@@ -2,11 +2,547 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khushi-Gupta-portfolio</title>
+    <title>Khushi Gupta| Java Backend Developer</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+     
+    </style>
 </head>
 <body>
+  <nav class="navbar">
     
+    <div class="navbar-container container">
+        <input type="checkbox" name="" id="">
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+           <li><a href="#skill">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="./assets/Khushi_Gupta_Resume.pdf" download onClick="opentab()">Resume</a></li>
+            
+        </ul>
+        <h1 class="logo" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Khushi Gupta</h1>
+    </div>
+</nav>
+<div></div>
+  <div id="home">
+
+   <div class="khus"> <img width="25%"height="25%" padding-top="0px"src="khushi.jpeg" alt=""> </div>
+
+    <h1 class="hero-title" >
+      <!-- Hi, I am -->
+       <span class="text-color-main name" style="color:  #E3304E; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Hi, I am Khushi Gupta</span>
+      <br />
+      <h3 class="hero-title" style="font-size: 30px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">I'm a Java Backend Developer.</h3>
+    </h1>
+    <div id="social_Links">
+      <div>
+        <a
+          href="https://github.com/khushi018"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="twitter"
+        >
+         <img src="./assets/github.png" alt="github">
+        </a>
+      </div>
+        
+      <div>
+        <a
+          href="https://www.hackerrank.com/khushigupta18x"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="codepen"
+        >
+        <img src="./assets/hackerrank.png" alt="hackerrank">
+        </a>
+      </div>
+      
+      <div>
+        <a
+          href="https://www.linkedin.com/in/khushi-gupta-39b784225/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="linkedin"
+        >
+          <img src="./assets/linkedin.png" alt="linkedin">
+        </a>
+      </div>
+      
+      <div>
+        <a
+          href="khushigupta.of@gamil.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="github"
+        >
+          <img src="./assets/email.png" alt="">
+        </a>
+      </div>
+  </div>
+  </div>
+
+  <section id="about" class="text-gray-600 body-font aboutme">
+    
+  <h1 id="heading" > ABOUT ME</h1>
+ <br><br>
+    <div class="container mx-auto flex px-5 py-24  md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero" src="./assets/khushi.jpg">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Khushi Gupta
+          <br class="hidden lg:inline-block">
+        </h1>
+        <!-- <p class="mb-8 leading-relaxed"> Enthusiastic aspiring Java back-end Developer.
+          Goal-oriented, hard-working, and a team-player.
+          Interested in Data Structure & Algorithm. Good in
+          solving DSA problems. Have good knowledge of
+          Javascript & Java language and Back-end tech stack.
+          Passionate about coding and interested in working in a
+          product-based company.</p> -->
+         
+           <p class="mb-8 leading-relaxed"> Dedicated aspiring full-stack web developer proficient in JAVA development. Collaborative team player, eager to work with interdisciplinary teams for organizational growth with a passion for creating new products looking forward to starting the journey as a JAVA Backend Developer.</p>
+
+         
+        <div class="flex justify-center but">
+          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">  <a href="./assets/Khushi_Gupta_Resume.pdf" target="_blank" class="cta-btn cta-btn--resume">View Resume</a></button>
+          <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"><a href="./assets/Khushi_Gupta_Resume.pdf" download class="cta-btn cta-btn--resume">Download Resume</a> </button>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </section>
+
+ 
+<br><br><br><br>
+  <h1 id="heading" > TECH-STACK </h1>
+  <div id="tachstack" >
+ 
+    <div class="stack">
+      <img src="./assets/java.png" alt="java">
+      <h3>JAVA</h3>
+    </div>
+    <div class="stack">
+      <img src="./assets/spring.png" alt="java">
+    <h3> Spring Boot</h3>
+    </div>
+    <div class="stack">
+      <img src="./assets/hibernate.png" alt="java">
+      <h3>HIBERNATE</h3>
+    </div>
+    <div class="stack">
+      <img src="./assets/mysql.png" alt="java">
+    <h3>SQL</h3>
+    </div>
+    <div class="stack">
+      <img src="./assets/jdbc.png" alt="java">
+    <h3> JDBC</h3>
+    </div>
+    <div class="stack">
+      <img src="./assets/api.png" alt="">
+      <h3>API</h3>
+    </div>
+    <div class="stack">
+      <img src="./assets/javascript.png" alt="java">
+    <h3> JavaScript</h3>
+    </div>
+    <div class="stack">
+      <img src="./assets/html.png" alt="java">
+    <h3> HTML</h3>
+    </div>
+    <div class="stack">
+      <img src="./assets/css.png" alt="java">
+    <h3> CSS</h3>
+    </div>
+    <div class="stack">
+      <img src="./assets/git.png" alt="java">
+    <h3> GIT</h3>
+    </div>
+    
+  </div>
+
+<p id="skill"></p>
+<br><br><br><br><br>
+  <h1 id="heading"> SKILLS </h1>
+
+  <div id="skills">
+   
+           
+    <div class="stack">
+      <img src="./assets/dsa.png" alt="teamwork">
+      <h3>DSA</h3>
+    </div>
+    <div class="stack">
+      <img src="./assets/background.png" alt="critical">
+      <h3>
+        Front End
+      </h3>
+    </div>
+    <div class="stack">
+      <img src="./assets/backend.png" alt="listning">
+      <h3>Back End</h3>
+    </div>
+    <div class="stack">
+      <img src="./assets/adabtability.webp" alt="time">
+      <h3>
+        ADAPTABILITY
+      </h3>
+    </div>
+    <div class="stack">
+      <img src="./assets/teammang.png" alt="teammang">
+      <h3>
+        Team Management
+      </h3>
+    </div>
+    <div class="stack">
+      <img src="./assets/remote.jpg" alt="teammang">
+      <h3>
+        Remote Work
+      </h3>
+    </div>
+    
+   
+</div>
+<br><br>
+<br><br><br>
+
+<br>
+<div id="projects">
+  <br><br><br>
+  <h1 id="heading"> PROJECTS </h1>
+
+
+
+
+  <br><br>
+<!-- Projects    -->
+
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero"   src="./assets/myglamm.jpg">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">MyGlamm Clone
+          <!-- <br class="hidden lg:inline-block"><p style="font-size: 24px;">(Clone)</p> -->
+
+        </h1>
+        <p class="mb-8 leading-relaxed">
+ 
+          <strong>Type: </strong> Group project(clone) <br>
+          <strong>Responsibilities:</strong> Landing page | CheckOut page | Login/Signup page <br>
+          <strong>Tech Stack:</strong> JavaScript | HTML | CSS | LocalStorage <br>
+          <strong>Description:</strong> MyGlamm.com is an E-commerce beauty website
+          famous for its luxury products. We built the clone of
+          MyGlamm.com clone within 4 days.
+
+        </p>
+        <div class="flex justify-center">
+          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <a
+            href="https://hermoso.netlify.app/"
+            target="_blank"
+            >Live
+          </a>
+          </button>
+          <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+            <a href="https://github.com/Khushi018/MyGlamm-Clone-" target="_blank"
+                  >Code</a
+                >
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+
+  <!-- <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero"   src="./assets/lys.jpg">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Project 3 -->
+          <!-- <br class="hidden lg:inline-block"><p style="font-size: 24px;">(Clone)</p> -->
+<!--
+        </h1>
+        <p class="mb-8 leading-relaxed">
+          <strong>Type: </strong> # Project<br>
+          <strong>Responsibilities:</strong> Life page | Payment Page | Address Page<br>
+          <strong>Tech Stack:</strong> JavaScript | HTML | CSS <br>
+          <strong>Description:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim odit sequi blanditiis at a quas unde, doloremque voluptatem veniam doloribus totam accusantium incidunt laudantium?
+
+        </p>
+        <div class="flex justify-center">
+          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <a
+                  href="NETLIFY LINK HERE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live</a
+                >
+          </button>
+          <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+            <a href="GITHUB LINK HERE " target="_blank"
+                  >Code</a
+                >
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+ -->
+
+
+  <br><br>
+
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero"   src="./assets/orbitz.jpg">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Orbitz Clone 
+
+        </h1>
+        <p class="mb-8 leading-relaxed">
+ 
+               
+          <strong>Type:</strong> Solo Project <br>
+          <strong>Tech Stack: </strong> HTML | CSS | JavaScript 
+          <br>
+          <strong>Discription: </strong> It was a solo project in which I have cloned the Orbitz transportation website Using the HTML, JavaScript, and CSS.
+          Completed with in 5 days.
+
+        </p>
+        <div class="flex justify-center">
+          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <a
+            href="https://warm-seahorse-9ae490.netlify.app/"
+            target="_blank"
+            >Live
+          </a>
+          </button>
+          <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+            <a  href="https://github.com/Khushi018/Orbitz-clone" target="_blank"
+                  >Code</a
+                >
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <br><br>
+
+
+
+  
+  <!-- <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <img class="object-cover object-center rounded" alt="hero"   src="./assets/ms.jpg">
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Project 4 
+
+        </h1>
+        <p class="mb-8 leading-relaxed">
+ 
+          <strong>Type: </strong> Solo project <br>
+          <strong>Tech Stack:</strong> JavaScript | HTML | CSS <br>
+          <strong>Description:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur voluptatum dolorem odio accusantium adipisci harum iusto soluta, quis nihil excepturi vel? Inventore, necessitatibus?
+
+        </p>
+        <div class="flex justify-center">
+          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <a
+                  href="https://fascinating-panda- NETLify /"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live</a
+                >
+          </button>
+          <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+            <a href="https://GITHUB LINK" target="_blank"
+                  >Code</a
+                >
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br> -->
+
+<div>
+<section id="stat">
+  <br><br> <br>
+  <h1 id="heading"> STATISTICS </h1>
+  <br><br><br><br><br>
+  <div id="statics">
+     
+   
+ 
+    <div class="stack">
+      <!-- <img src="./assets/dsa.png" alt="teamwork"> -->
+      <h3>1200+</h3>
+      <h5>Hours of Coding</h5>
+    </div>
+    <div class="stack">
+      <!-- <img src="./assets/background.png" alt="critical"> -->
+      <h3>
+       300+
+      </h3>
+      <h5>DSA problems</h5>
+    </div>
+    <div class="stack">
+      <!-- <img src="./assets/backend.png" alt="listning"> -->
+      <h3>2 Major</h3>
+      <h5>Projects</h5>
+    </div>
+    <div class="stack">
+      <!-- <img src="./assets/fastlearn.jpg" alt="fastlearn"> -->
+      <h3>6 Months+</h3>
+      <h5>Power skills</h5>
+    </div>
+    <div class="stack">
+      <!-- <img src="./assets/dsa.png" alt="teamwork"> -->
+      <h3>250+</h3>
+      <h5>Git Contribution</h5>
+    </div>
+
+</div>
+<br><br><br>
+</section>
+
+
+    <section id="github">
+     
+      <h1 id="heading"> GITHUB </h1>
+      <br><br><br><br><br>
+  
+  <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img  src="https://github-profile-trophy.vercel.app/?username=khushi018" alt="mozakir178" /></a> </p>
+  
+  
+  
+  
+  <p align="center"><img align="center"  src="https://github-readme-stats.vercel.app/api/top-langs?username=khushi018&show_icons=true&locale=en&layout=compact" alt="khushi018" /></p>
+  
+  <p align="center">&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=khushi018&show_icons=true&locale=en" alt="khushi018" /></p>
+  
+  <p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=khushi018&" alt="khushi018" /></p>
+  
+  <div class="calendar" >
+  
+    Loading the data just for you.
+  </div>
+  <br><br>
+    </section>
+    
+  
+     
+  <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+  </script>
+  
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+  />
+  
+  
+  <script>
+   
+    GitHubCalendar(".calendar", "khushi018", { responsive: true });
+  
+  </script> 
+
+
+</div>
+
+<section id="contact">
+ <br><br><br>
+  <h1 id="heading"> CONTACT ME </h1>
+  <br><br><br><br><br>
+  <p class="details"><a href="mailto:mozakir178@gmail.com" target="_blank" >khushigupta.of@gmail.com</a></p>
+  <p class="details">  <a href="https://wa.me/+918383015513" target="_blank" >WhatsaApp</a> </p>
+  <p class="details"> <a href="https://wa.me/+918383015513" target="_blank" >8383015513</a> </p>
+        
+  <div id="social_Links">
+    <div>
+      <a
+        href="https://github.com/khushi018"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="twitter"
+      >
+       <img src="./assets/github.png" alt="github">
+      </a>
+    </div>
+      
+    <div>
+      <a
+        href="https://www.hackerrank.com/khushigupta18x"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="codepen"
+      >
+      <img src="./assets/hackerrank.png" alt="hackerrank">
+      </a>
+    </div>
+    
+    <div>
+      <a
+        href="https://www.linkedin.com/in/khushi-gupta-39b784225/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="linkedin"
+      >
+        <img src="./assets/linkedin.png" alt="linkedin">
+      </a>
+    </div>
+    
+    <div>
+      <a
+        href="mailto:khushigupta.of@gamil.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="github"
+      >
+        <img src="./assets/email.png" alt="">
+      </a>
+    </div>
+</div>
+
+<h5 style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Made with <3 by Khushi Gupta
+<br>
+Give Love and Support</h5>
+<!-- <h4>Made by Khushi Gupta</h4>
+  <h4>Give Love and Support</h4> -->
+</section>
+
+
+
+
 </body>
 </html>
+    <script>
+function opentab() {
+  window.open("./assets/Khushi_Gupta_Resume.pdf");
+}
+</script>
